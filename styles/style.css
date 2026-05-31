@@ -5,22 +5,39 @@
 }
 
 :root {
-
+    --bg-color: #061117;
+    --text-color: rgba(255, 255, 255, 0.842);
+    --button-color: #B8391B;
+    --text-button: #061117e0;
 }
 
 header {
-    
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    z-index: 1;
 
     nav {
         display: flex;
-        z-index: 1;
         justify-content: space-between;
-        
+        padding: 2rem;
 
         ul {
             list-style-type: none;
+            display: flex;
+            gap: 2rem;
+            color: white;   
             
-            
+            li {
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
         }
     }
+}
+
+.home {
+    height: 100vh;
 }
